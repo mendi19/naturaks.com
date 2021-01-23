@@ -133,6 +133,8 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
             var price = price;  // get selected product's price
             var qty = parseInt(qty);  // get quantity
             //alert(qty);
+
+             var delivery = $('#opstina_select').find(':selected').data('price') || 300;
             if(qty > 0){
               // update Qty if product is already present
               for (var i in cart) {
@@ -141,7 +143,9 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
                      // console.log("TYPE:"+type+": Name :"+name+" - P:"+cart[i].Product+": QTY:"+qty+": price:"+price);
                       cart[i].Qty = qty;  // replace existing Qty
                       cart[i].Price = price; 
-                      showCart(300);
+
+
+                      showCart(delivery);
                       saveCart();
                       return;
                   }
@@ -150,7 +154,8 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
               var item = { Product: name, Price: price, Qty: qty, Image: img, Type: type, ID: id,uniqueID:uniqueID, Link:link};
               cart.push(item);
               saveCart();
-              showCart(300);
+              
+              showCart(delivery);
             }
         }
 
