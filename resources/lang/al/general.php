@@ -1,4 +1,4 @@
 <?php
-return ['currency' => 'lekë'];
+return ['currency' => 'euro'];
 
 ?>

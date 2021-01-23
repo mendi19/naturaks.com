@@ -52,6 +52,7 @@ $('.add_to_cart').click(function(){
         link       = $(this).data('link'),
         uniqueID         = id+"-"+type;
         var getqty = $('.quantity_'+type+'_'+id).val();
+        //$(this).attr('qty', getqty)
 
         addToCart(id,uniqueID,name,type,getqty,price,photopath,link);
    
@@ -118,7 +119,7 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
                 // load cart data from local storage
                 cart = JSON.parse(sessionStorage.cart);  
          
-                showCart();  // display cart that is loaded into cart array
+                showCart(300);  // display cart that is loaded into cart array
                 var currentpath = window.location.pathname;
             }else{
               $(".cart_checkout_btn").css("visibility", "hidden"); // hide table that shows cart
@@ -140,7 +141,7 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
                      // console.log("TYPE:"+type+": Name :"+name+" - P:"+cart[i].Product+": QTY:"+qty+": price:"+price);
                       cart[i].Qty = qty;  // replace existing Qty
                       cart[i].Price = price; 
-                      showCart();
+                      showCart(300);
                       saveCart();
                       return;
                   }
@@ -149,7 +150,7 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
               var item = { Product: name, Price: price, Qty: qty, Image: img, Type: type, ID: id,uniqueID:uniqueID, Link:link};
               cart.push(item);
               saveCart();
-              showCart();
+              showCart(300);
             }
         }
 
@@ -164,11 +165,11 @@ function saveCart() {
     function deleteItem(index){
       console.log("INDEX TO DELETE="+index);
             cart.splice(index,1); // delete item at index            
-            showCart();
+            showCart(300);
             
             saveCart();
 
-            showCart();
+            showCart(300);
             var currentpath = window.location.pathname;
 
         }
@@ -189,11 +190,17 @@ function escapeHtml (string) {
   });
 }
 
-function showCart() {
+$('#opstina_select').change(function(){
+  var delivery = $(this).find(':selected').data('price');
+  //alert(delivery);
+  console.log("-----------");
+    showCart(delivery);
+  console.log("-----------");
+});
+function showCart(deliveryprice) {
 
-  console.log(cart);
-        var ID_CURRENT = $('#ID_CURRENT').val() || 0;
-   
+       //console.log(cart);
+         var ID_CURRENT = $('#ID_CURRENT').val() || 0;
          if (cart.length == 0) {
                  $('.cart_table').addClass('d-none');
                  $('.orderclientdetails').addClass('d-none');
@@ -219,13 +226,13 @@ function showCart() {
             var ddv5=0;
             var baseddv18 = 0;
             var baseddv5  = 0;
-            var deliveryprice  = 0;
             for (var i in cart) {
                 var item = cart[i];
 
                 if((item.ID+"-"+item.Type) == ID_CURRENT){
                   $('.show_current_cart_item').removeClass('d-none');
                 }
+
                 var popustreverse = (100 - item.POPUSTPERCENT) / 100;
                 var NEWPRICEPERPRODUCT = item.Price * popustreverse;
 
@@ -321,12 +328,12 @@ function showCart() {
             }
 
 
-            var deliveryprice = 0;
+       
 
-            if(totaltopay < 900){
-              deliveryprice = 100;
-              totaltopay += 100;
-            }
+           // if(totaltopay < 990){
+             // deliveryprice = 300;
+              totaltopay += deliveryprice;
+            //}
 
             $('#idscart').val(JSON.stringify(cart));
             totaltopay_withshipping = totaltopay;// + deliveryprice;
@@ -343,7 +350,7 @@ $('.opencart').click(function(){
   $('body').css('overflow','hidden');
 });
 $('.MiniBasketDropdown__close-button').click(function(){
-	$('.cart-full-wrapper').removeClass('showcart');
+  $('.cart-full-wrapper').removeClass('showcart');
    $('.cart-full-wrapper').fadeOut(500);
     $('body').css('overflow','auto');
 });
@@ -355,7 +362,7 @@ $(document).on('click','.clearcartbtn',function(){
     
   }
   cart =[];
-  showCart();
+  showCart(300);
 });
 
 

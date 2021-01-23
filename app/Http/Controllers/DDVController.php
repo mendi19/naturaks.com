@@ -16,14 +16,8 @@ class DDVController extends Controller
 
 
         $ddv5_f = 0;$ddv18_f=0;
-
-         // echo "Order code: ".$data->code."<br>";
-
-         // echo "Delivery:".$data->deliveryprice."<br>";
-         
-
-
-          if(isset($data->getorderdetails)){
+        
+        if(isset($data->getorderdetails)){
             $ddv18 = 0; $ddv5=0;$baseddv18=0;$baseddv5=0;$total_price=0;
 
             if($data->deliveryprice > 0){
@@ -38,29 +32,19 @@ class DDVController extends Controller
                     $makeddvvrednost = ($vvv->price_with_discount / (100 + intval($vvv->getproduct->getddv->ddv))) * $vvv->getproduct->getddv->ddv;
                     $makeBaseDDV  = $vvv->price_with_discount / (100 + intval($vvv->getproduct->getddv->ddv));
 
-                     /*   echo $vvv->getproduct->name."<br>";
-                        echo $vvv->getproduct->getddv->ddv."%<br>";
-
-                        echo "Price: ".$vvv->price_with_discount."<br>";
-                        echo "DDV Vrednost: ".$makeddvvrednost."<br>";
-                        echo "Base DDV: ".$makeBaseDDV."<br>";
-                        echo "QTY:".$vvv->qty."<br>";*/
+                 
 
                      if($vvv->getproduct->getddv->ddv == 18){
                         $ddv18 += $makeddvvrednost * $vvv->qty;
                         $baseddv18 += $makeBaseDDV * 100 * $vvv->qty;
                       }
-                      if($vvv->getproduct->getddv->ddv == 5){
+                      if($vvv->getproduct->getddv->ddv == 8){
                         $ddv5   += $makeddvvrednost * $vvv->qty;
                         $baseddv5 += $makeBaseDDV * 100 * $vvv->qty;
                       }
 
-                   /*   echo "DDV 5%:".$ddv5."<br>";
-                      echo "DDV 18%:".$ddv18."<br>";
-                      echo "Base DDV 5%:".$baseddv5."<br>";
-                      echo "Base DDV 18%:".$baseddv18."<br>";*/
-
-                        $ddv5_f += $ddv5;$ddv18_f += $ddv18;
+                        $ddv5_f += $ddv5;
+                        $ddv18_f += $ddv18;
 
                  }else{
                    // echo "<br>PACKS:<br>";
@@ -81,39 +65,25 @@ class DDVController extends Controller
                         foreach ($packs->getproductsrelations as $kpp => $vpp) {
                         
                             if(isset($vpp->getproduct_mini_ddv->getddv)){
-                                if($vpp->getproduct_mini_ddv->getddv->ddv == 18){
-                                   // echo "ddv 18 for prod: ".$vpp->getproduct_mini_ddv->getddv->ddv."<Br>";
-                                   
-                                    $anr_ddv18+=1; //+= ($devided_price / 118) * 18;
-                                   //  echo "18qe==>".$anr_ddv18."<br>";
-                                }else if($vpp->getproduct_mini_ddv->getddv->ddv == 5){
+                                if($vpp->getproduct_mini_ddv->getddv->ddv == 18){                                 
+                                    $anr_ddv18+=1; 
+                                }else if($vpp->getproduct_mini_ddv->getddv->ddv == 8){
                                     
                                     $anr_ddv5+=1;// ($devided_price / 105) * 5;
-                                    /* echo "5qe==>".$anr_ddv5."<br>";
-                                     echo "ddv 5 for prod: ".$vpp->getproduct_mini_ddv->getddv->ddv."<Br>";*/
                                 }
                             }
                         }
 
                     $ddvtotal = $anr_ddv18 + $anr_ddv5;
-                  /*  echo "NR ddv 5:".$anr_ddv5."<br>";
-                    echo "NR ddv 18:".$anr_ddv18."<br>";
-                    echo "DDV TOTAL:".$ddvtotal."<br>";*/
                     $splitprice = $vvv->price_with_discount / $ddvtotal;
 
-                  //  echo "Split Price:".$splitprice."<br>";
-               
+         
                     $ddv18 +=  ((($splitprice / 118) * 18) * $anr_ddv18) * $vvv->qty;
-                    $ddv5  +=  ((($splitprice / 105) * 5) * $anr_ddv5) * $vvv->qty;
+                    $ddv5  +=  ((($splitprice / 108) * 8) * $anr_ddv5) * $vvv->qty;
 
                     $baseddv18 +=  ((($splitprice / 118) * 100) * $anr_ddv18) * $vvv->qty;
-                    $baseddv5  +=  ((($splitprice / 105) * 100) * $anr_ddv5) * $vvv->qty;
-                     /* echo "DDV 5%:".$ddv5."<br>";
-                      echo "DDV 18%:".$ddv18."<br>";
-                      echo "Base DDV 5%:".$baseddv5."<br>";
-                      echo "Base DDV 18%:".$baseddv18."<br>";*/
-
-                      $ddv5_f += $ddv5;$ddv18_f += $ddv18;
+                    $baseddv5  +=  ((($splitprice / 108) * 100) * $anr_ddv5) * $vvv->qty;
+                    $ddv5_f += $ddv5;$ddv18_f += $ddv18;
                     }
                  }
 
@@ -123,17 +93,8 @@ class DDVController extends Controller
                 
             }//end foreach
              // echo "<br>---------------<br>";
-
-              /* echo "Final DDV 5%:".$ddv5."<br>";
-                      echo "Final DDV 18%:".$ddv18."<br>";
-                      echo "Final Base DDV 5%:".$baseddv5."<br>";
-                      echo "Final Base DDV 18%:".$baseddv18."<br>";*/
-                      $base_ddv = $baseddv5 + $baseddv18;
-                      $total_order_ddv = $ddv5 + $ddv18;
-
-                 /*   echo "Total base ddv:".$base_ddv."<br>";
-                    echo "Total ddv:".$total_order_ddv."<br>";*/
-
+                $base_ddv = $baseddv5 + $baseddv18;
+                $total_order_ddv = $ddv5 + $ddv18;
            
                  $total_order_promet = $data->total_order - $total_order_ddv;
 

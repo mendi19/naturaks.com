@@ -145,7 +145,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-12">
-					<p class="mb-0">© Copyright 2020 | <a href="{{route('shop.index')}}" class="link">Natura Therapy</a></p>
+					<p class="mb-0">© Copyright {{date('Y')}} | <a href="{{route('shop.index')}}" class="link">Natura Therapy</a></p>
 				</div>
 				<div class="col-md-8 col-12">
 					<ul class="footerlinks">
@@ -155,8 +155,9 @@
 						<li class=""><a href="{{route('shop.legal.info')}}">{{trans('legalpage.title')}}</a></li>
 
 					</ul>
+					<!--
 					<div class="col-md-12"></div>
-					<div class="footer-text-smaller">{{trans('payments.notification')}}</div>
+					<div class="footer-text-smaller">{{trans('payments.notification')}}</div>-->
 				</div>
 			</div>
 			

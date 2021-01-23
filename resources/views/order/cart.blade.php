@@ -28,7 +28,6 @@
 			<img src="{{asset('assets/images/flower-element-2-right.svg')}}" class="element-img element-img-lg">
 		</div>
 
-		
 		<div class="container d-none showifempty" data-content="partial">
 				<div class="text-center">
 					<h2 class="h1 mb-4 mb-lg-5">{{trans('global.productsincart')}}</h2>
@@ -37,7 +36,6 @@
 								<i class="fa fa-info-circle"></i> {{trans('cart.ordercanbemadeonlyby')}}
 							</div>
 						</div>
-
 					<p class="mb-4 mb-lg-5">{{trans('global.noprodincart')}}</p>
 					<a href="{{route('shop.products')}}" class="btn btn-secondary">{{trans('global.backtoproducts')}}</a>
 				</div>
@@ -60,7 +58,6 @@
 						<div class="table-responsive ">
 				<table class="table table-style-1 table-cart">
 		  			<thead>
-
 		  				<tr>
 		  								<th colspan="2">{{trans("global.product")}}</th>
 										<th>{{trans("global.price")}}</th>
@@ -70,11 +67,7 @@
 		  			<tbody class="show_cart_v2">
 					
 					</tbody>
-					
 </table>
-
-<div class="col-md-12"><div class="text-red text-right"><hr>{{trans('cart.discount2percent')}}</div></div>
-
 </div>
 </div>
 <div class="text-right hidecartorno">
@@ -83,10 +76,7 @@
 <div class="text-right hidecartorno">
 	<p class="h4">{{trans('cart.total_price')}}:<br> <span data-cart-label="total_price" class="total-price">0</span> {{trans('general.currency')}}.</p>
 </div>
-
-
 <hr class="my-4 hidecartorno">
-
 					<div class="row justify-content-center hidecartorno">
 						<div class="col-xl-10">
 							<div class="text-center">
@@ -95,37 +85,19 @@
 							</div>
 							<div class="row">
 								<div class="col-md-3 form-group mb-md-4">
-									<label>{{trans('global.fname')}} <span class="text-red">*</span></label>
+									<label>{{trans('global.fname')}}</label>
 									<input type="text" class="form-control" placeholder="{{trans('global.fname')}}" value="" name="name" data-validation="[NOTEMPTY]" >
 								</div>
 								<div class="col-md-3 form-group mb-md-4">
-									<label>{{trans('global.lname')}} <span class="text-red">*</span></label>
+									<label>{{trans('global.lname')}}</label>
 									<input type="text" class="form-control" placeholder="{{trans('global.lname')}}" value="" name="lastname" data-validation="[NOTEMPTY]" >
 								</div>
-
 								<div class="col-md-3 form-group mb-md-4">
-									<label>{{trans('global.phone')}} <span class="text-red">*</span></label>
-									<input type="text" class="form-control phoneformat" placeholder="{{trans('global.phone')}}" value="" name="phone" data-validation="[NOTEMPTY]" >
-									
-								</div>
-
-							
-
-								<div class="col-md-3 form-group mb-md-4">
-									<label>{{trans('global.datedelivery')}} <span class="text-red">*</span></label>
-									<input type="text" class="form-control datepicker_nopast" placeholder="" value="" readonly name="delivery_date" data-validation="[NOTEMPTY]">
-								</div>
-								<!--
-									<div class="col-md-3 form-group mb-md-4">
-									<label>{{trans('global.email')}} <span class="text-red">*</span></label>
-									<input type="text" class="form-control" placeholder="E-mail" value="" name="email" data-validation="[NOTEMPTY]" >
-								</div>-->
-										<div class="col-md-3 form-group mb-md-4">
-									<label>{{trans('global.opstina')}} <span class="text-red">*</span></label>
-									<select class="form-control" name="opstina" data-validation="[NOTEMPTY]" >
+									<label>{{trans('global.opstina')}}</label>
+									<select class="form-control" id="opstina_select" name="opstina" data-validation="[NOTEMPTY]" >
 										<option value="">{{trans('global.choose')}}</option>
 										@foreach($cities as $k => $v)
-											<option value="{{$v->id}}">{{$v->name}}</option>
+											<option data-price="{{$v->price}}" value="{{$v->id}}">{{$v->name}}</option>
 										@endforeach
 									</select>
 								</div>
@@ -134,11 +106,24 @@
 									<label>{{trans('global.region')}}</label>
 									<input type="text" class="form-control" placeholder="{{trans('global.region')}}" value="" name="area">
 								</div>
+
+								<div class="col-md-3 form-group mb-md-4">
+									<label>{{trans('global.datedelivery')}}</label>
+									<input type="text" class="form-control datepicker_nopast" placeholder="" value="" readonly name="delivery_date" data-validation="[NOTEMPTY]">
+								</div><!--
+									<div class="col-md-3 form-group mb-md-4">
+									<label>{{trans('global.email')}}</label>
+									<input type="text" class="form-control" placeholder="E-mail" value="" name="email" data-validation="[NOTEMPTY]" >
+								</div>-->
+								<div class="col-md-3 form-group mb-md-4">
+									<label>{{trans('global.phone')}}</label>
+									<input type="text" class="form-control phoneformat" placeholder="{{trans('global.phone')}}" value="" name="phone" data-validation="[NOTEMPTY]" >
+									
+								</div>
 								<div class="col-md-12 form-group mb-md-4">
-									<label>{{trans('global.addresstodeliver')}} <span class="text-red">*</span></label>
+									<label>{{trans('global.addresstodeliver')}}</label>
 									<input type="text" class="form-control" placeholder="{{trans('global.addresstodeliver')}}" value="" name="address" id="place_search" data-validation="[NOTEMPTY]" >
 								</div>
-
 								<!--
 								  <div class="form-group col-md-12  ornewaddress ">
 				                        <label>{{trans('global.drag_the_marker')}}</label>
@@ -153,8 +138,8 @@
 								<div class="col-12 form-group mb-md-4">
 									<textarea class="form-control" placeholder="{{trans('global.additional_comment')}}" name="message" rows="6"></textarea>
 								</div>
-							
-								<div class="col-md-6">
+								<!--
+								<div class="col-md-12">
 										<div>
 											<input type="radio" class="-control" id="pay_at_delivery" name="payment_method" value="0" data-validation="[NOTEMPTY]" >
 											<label for="pay_at_delivery">{{trans('global.pay_at_delivery')}}</label>
@@ -163,9 +148,16 @@
 											<input type="radio" class="-control" id="creditcard" name="payment_method" value="1" data-validation="[NOTEMPTY]" >
 											<label for="creditcard">{{trans('global.creditcard')}}</label>
 										</div>
+								</div>-->
+								<div class="col-md-12">
+										<div class="text-right hidecartorno">
+	<p class="h4">{{trans('cart.isporaka')}}:<br> <span data-cart-label="total_price" class="deliveryprice">0</span> {{trans('general.currency')}}.</p>
+</div>
+<div class="text-right hidecartorno">
+	<p class="h4">{{trans('cart.total_price')}}:<br> <span data-cart-label="total_price" class="total-price">0</span> {{trans('general.currency')}}.</p>
+</div>
 								</div>
-
-								<div class="col-6 text-right">
+								<div class="col-12 text-right">
 									<div id="showerrors__2"></div>
 									<button type="submit" class="btn btn-secondary">{{trans('cart.confirm_order_btn')}}</button>
 								</div>

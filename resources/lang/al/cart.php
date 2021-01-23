@@ -9,6 +9,6 @@ Nëse numri i telefonit ose e-maili që keni lënë nuk ekzistojnë ose nuk jan�
 'isporaka'		=> 'Dërgesa',
 'discount'		=> 'Zbritje',
 
-'ordercanbemadeonlyby'		=> 'Porositë mund të bëhen vetëm nga klientët nga territori i Shqipërisë, për të cilët zbatohen kushtet për porosinë dhe dërgimin!'
+'ordercanbemadeonlyby'		=> 'Porositë mund të bëhen vetëm nga klientët nga territori i Kosovës, për të cilët zbatohen kushtet për porosinë dhe dërgimin!'
 ]
 ?>

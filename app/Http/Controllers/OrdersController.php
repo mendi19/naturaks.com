@@ -180,13 +180,14 @@ class OrdersController extends Controller
 	            }//end foreach
                 	
 	            $array_update_order = array();
-	            $deliveryprice = 0;
+	            $deliveryprice = 300;
 
-	            if($total_for_pay < 900){
-	              $total_for_pay += 100;
-                $deliveryprice = 100;
-                $total_price   += 100;
-	            }
+              $getcity = Cities::find($request->opstina);
+              if(isset($getcity)){
+                $deliveryprice = $getcity->price;
+              }
+
+              $total_for_pay += $deliveryprice;
 
 	      
 	            $array_update_order['total_order']              = $total_for_pay;
@@ -197,43 +198,7 @@ class OrdersController extends Controller
                 $fixDDV = new DDVController();
                 $fixDDV->correctDDV($orderID);
 
-              /*  if($operator_id > 0 && $operator_id!=26 && $operator_id!=24 
-                  && is_null(OrdersEmployeeInfos::where('order_id',$orderID)->first())){
-
-                    $userinfo = EmployeeMoreInfos::where('user_id',$operator_id)->first();
-                    $leader_id = 0;
-                    $leader_percent=0;
-                    $is_team_leader=0;
-                    
-                    if(!is_null($userinfo)){
-
-                      $getlider = User::with('getoperator.getemployeemoreinfos')->find($operator_id);
-
-                      if(!is_null($getlider) && isset($getlider->getoperator->getemployeemoreinfos)){
-                        $leader_id = $getlider->operator_id;
-                        $leader_percent= $getlider->getoperator->getemployeemoreinfos->neto_percent_from_all;
-                        $is_team_leader= $getlider->getoperator->getemployeemoreinfos->is_team_leader;
-                      } 
-
-                        $newinfosuser = new OrdersEmployeeInfos();
-                        $newinfosuser->order_id = $orderID;
-                        $newinfosuser->operator_id  = $operator_id;
-                        $newinfosuser->user_id    = $client_id;
-                        $newinfosuser->domain_id  = 3;
-                        $newinfosuser->is_reg_employee  = $userinfo->is_reg_employee;
-                        $newinfosuser->in_out_employee  = $userinfo->in_out_employee;
-                        $newinfosuser->is_team_leader  = $userinfo->is_team_leader;
-                        $newinfosuser->neto_salary  = $userinfo->neto_salary;
-                        $newinfosuser->neto_percent_from_promet  = $userinfo->neto_percent_from_promet;
-                        $newinfosuser->neto_percent_from_all  = $userinfo->neto_percent_from_all;
-                        $newinfosuser->leader_id      = $leader_id;
-                        $newinfosuser->leader_percent = $leader_percent;
-                        $newinfosuser->is_team_leader = $is_team_leader;
-                        if(!empty($current_inban_operators)){$newinfosuser->current_inban_operators = $current_inban_operators;}
-                        $newinfosuser->save();
-                      }
-                    }*/
-
+              
                
                 $dataorder = Orders::where('id',$neworder->id)->with('getorderdetails')->first();
                 /*if(!is_null($dataorder) && $payment_method == 0){
