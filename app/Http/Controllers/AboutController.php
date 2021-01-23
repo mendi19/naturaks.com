@@ -7,7 +7,7 @@ use App\Models\AboutUs,App\Models\Cities;
 class AboutController extends Controller
 {
     public function index(){
-    	$domain_id = 3;
+    	$domain_id = 12;
     	$data = AboutUs::where('domain_id',$domain_id)->first();
 
     	 $cities = Cities::query();

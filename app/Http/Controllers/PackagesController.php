@@ -11,7 +11,7 @@ class PackagesController extends Controller
      public function packages(){
      	$rows_per_page = 50;$category_id=0;
 
-    	$data = Packages::where('domain_id',3)
+    	$data = Packages::where('domain_id',12)
     	->where('slug','!=',NULL)
     	->where('status_webpage',1)
     	->orderby('nrorder','asc')
@@ -39,7 +39,7 @@ class PackagesController extends Controller
         if ($category_id === false) {
         
         } else {
-           $data =  Packages::where('domain_id',3)
+           $data =  Packages::where('domain_id',12)
         ->where('slug','!=',NULL)
         ->where('status_webpage',1)
         ->where('category_id',$category_id)

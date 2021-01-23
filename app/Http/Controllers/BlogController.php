@@ -9,7 +9,7 @@ use App\Models\BlogPosts;
 class BlogController extends Controller
 {
     public function index(){
-    	$domain_id = 3;
+    	$domain_id = 12;
     	$data = BlogPosts::where('domain_id',$domain_id)->get();
     	return view('blog/list',compact('data'));
     }

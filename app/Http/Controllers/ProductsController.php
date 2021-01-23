@@ -11,7 +11,7 @@ class ProductsController extends Controller
     public function products(){
         $category_id = 0;
     	$rows_per_page = 50;
-    	$data = DomainProducts::where('domain_id',3)
+    	$data = DomainProducts::where('domain_id',12)
     	->where('status_webpage',1)
     	->where('slug','!=',NULL)
     	->orderby('nrorder','asc')
@@ -22,7 +22,7 @@ class ProductsController extends Controller
     }
 
     public function show($slug){
-    	$data = DomainProducts::where('domain_id',3)
+    	$data = DomainProducts::where('domain_id',12)
         ->where('slug','LIKE',$slug)
         ->where('status_webpage',1)
         ->with('getimages')->first();
@@ -41,7 +41,7 @@ class ProductsController extends Controller
         if ($category_id === false) {
         
         } else {
-           $data = DomainProducts::where('domain_id',3)
+           $data = DomainProducts::where('domain_id',12)
            ->where('status_webpage',1)
            ->where('category_id',$category_id)
            ->orderby('nrorder','asc')

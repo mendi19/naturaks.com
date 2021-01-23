@@ -15,7 +15,7 @@ use Illuminate\Support\Str;
 class OrdersController extends Controller
 {
 	public function cart(){
-		$CURRENT_DOMAIN =3;
+		$CURRENT_DOMAIN =12;
         $cities = Cities::query();
         $cities->where('domain_id',$CURRENT_DOMAIN);
         $cities = $cities->where('status',1)
