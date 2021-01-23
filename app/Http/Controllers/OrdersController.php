@@ -100,11 +100,11 @@ class OrdersController extends Controller
     		 $lastpackage = Orders::where('domain_id',$domain_id)->orderby('code','desc')->first();
     		// echo "1<br>";
             if(is_null($lastpackage)){
-                $new_order_cod = \Carbon::now()->format('Y').'NT000001';
+                $new_order_cod = \Carbon::now()->format('Y').'NT-KS000001';
             }else{
                 $new_order_code = substr($lastpackage->code, -6);
                 $new_order_code = intval($new_order_code) + 1;
-                $new_order_cod = createCodeProductv22(\Carbon::now()->format('Y').'NT',6,$new_order_code);
+                $new_order_cod = createCodeProductv22(\Carbon::now()->format('Y').'NT-KS',6,$new_order_code);
             }
             
             // echo "2<br>";
