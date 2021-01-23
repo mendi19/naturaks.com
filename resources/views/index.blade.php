@@ -248,23 +248,7 @@
             </div>
         </div>
     </section>
-    <section class="banner-section">
-        <div class="banner bg-image bg-image-hide-sm py-5 py-lg-100" style="background-image:url({{asset('assets/images/naucno-dokazano-bg.jpg')}})">
-            <div class="banner-subbanner overlay-primary d-sm-none" style="background-image:url({{asset('assets/images/banners/sidebanner.png')}});background-position: center bottom;"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 col-lg-6 col-xl-5">
-                        <h2 class="h1 font-weight-bold mb-4 mb-lg-5">{{trans('index.naucnodokazano')}}</h2>
-                        {!!trans('index.naucnodokazano_p')!!}
-                        <div class="img-wrapper mb-4 mb-lg-5">
-                            <img src="{{asset('assets/images/potpis-drvoshanski.png')}}" class="signature signature-md" alt="">
-                        </div>
-                        <a href="{{route('shop.blog')}}" class="btn btn-secondary btn-arrow">{{trans('global.findoutmore')}}</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     <section class="bg-primary py-5 py-xl-100">
         <div class="container">
             <div class="row justify-content-center">
