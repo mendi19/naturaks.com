@@ -14,6 +14,9 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'root_link_assets'  => 'https://naturaks.com',
+    'root_link_images'  => 'https://sys.natura-therapy.com',
+    'domain_id'         => 12,
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +83,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'al',
 
     /*
     |--------------------------------------------------------------------------
