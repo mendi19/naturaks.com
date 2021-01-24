@@ -101,11 +101,7 @@
 								<img src="{{asset('assets/images/icons/call-icon.svg')}}" class="icon icon-xs d-inline-block mr-1"> {{trans('foot.phonenumb')}}
 							</a>
 						</li>
-						<li class="">	
-							<a class="link" href="#">
-								<img src="{{asset('assets/images/icons/call-icon.svg')}}" class="icon icon-xs d-inline-block mr-1"> {{trans('foot.phonenumb2')}}
-							</a>
-						</li>
+					
 					</ul>
 					<div class="d-md-none text-center">
 						<ul class="list-unstyled">
