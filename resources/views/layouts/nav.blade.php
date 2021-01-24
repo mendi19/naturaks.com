@@ -7,10 +7,10 @@
                 </li>
                 <li class="list-inline-item"></li>
                 <li class="list-inline-item mr-2 mr-md-3 mr-xl-4">
-                    <a href="mailto:contact@naturatherapy.mk" class="link link-dark"><i class="fa fa-envelope-o text-green mr-2" aria-hidden="true"></i>contact@naturatherapy.mk</a>
+                    <a href="mailto:{{trans('foot.emailfoot')}}" class="link link-dark"><i class="fa fa-envelope-o text-green mr-2" aria-hidden="true"></i>{{trans('foot.emailfoot')}}</a>
                 </li>
                 <li class="list-inline-item ">
-                    <a href="tel:+389 70 230 720" class="link link-dark font-weight-medium"><i class="fa fa-phone text-green mr-2" aria-hidden="true"></i>{{trans('global.orderon')}}: +389 70 230 720</a>
+                    <a href="tel:{{trans('foot.phonenumb')}}" class="link link-dark font-weight-medium"><i class="fa fa-phone text-green mr-2" aria-hidden="true"></i>{{trans('global.orderon')}}: {{trans('foot.phonenumb')}}</a>
                 </li>
             </ul>
         </div>

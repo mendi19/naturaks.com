@@ -32,7 +32,9 @@
 
 </head>
 <body>
-<div class="alert alert-success alert-dismissible fade hide" role="alert"><p data-alert="msg" class="mb-0">Производот 'Универзален Мелем (100ml)' е додаден во кошничката!</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+<div class="alert alert-success alert-dismissible fade hide" role="alert"><p data-alert="msg" class="mb-0">
+	
+</p><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>
 @include('layouts/nav')
 
 @yield('content')
@@ -55,7 +57,7 @@
 					<div class="d-none d-md-block">
 						<ul class="list-unstyled">
 							<li>
-								<span class="mr-3">Пон-пет:</span>
+								<span class="mr-3">E hane-E premte:</span>
 								<span class="">08:00am - 08:00pm</span>
 							</li>
 							<li>
