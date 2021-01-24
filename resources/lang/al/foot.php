@@ -2,10 +2,10 @@
 return [
 	'contactus'		=> 'Na kontaktoni',
 	'companyNamefull'	=> 'NATURA THERAPY',
-	'address'			=> 'rr.Myslym Shyrri nr.20,<br> Tiranë – Shqipëri',
+	'address'			=> 'BULEVARDI I DESHMORVE  K-P  H-2  N-1<br> Prishtinë – Kosovë',
 	'emailfoot'			=> 'contact@naturaks.com',
-	'phonenumb'			=> '+355 44 80 33 44',
-	'phonenumb2'		=> '+355 44 80 33 44',
+	'phonenumb'			=> '+383 45 956 000',
+	'phonenumb2'		=> '',
 	'workingdays'		=> 'E hënë-E premte:',
 	'workinghours'      =>'08:00am - 08:00pm',
 	'saturday'			=> 'E shtunë',

@@ -68,13 +68,13 @@
 							<p class="d-inline-block mr-4">Get Social</p>
 							<ul class="d-inline-block list-inline mb-0">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/naturatherapy.mk/" target="_blank" class="link link-primary"><i class="fa fa-facebook icons" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/naturatherapy.ks" target="_blank" class="link link-primary"><i class="fa fa-facebook icons" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.youtube.com/channel/UCUH7clLtbM5huq6hP1ZLkiA" target="_blank" class="link link-primary"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+									<a href="https://www.youtube.com/channel/UCSqpwiA5_ace07x3_NLlcqg" target="_blank" class="link link-primary"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/naturatherapy.mk/" target="_blank" class="link link-primary"><i class="fa fa-instagram icons mr-2" aria-hidden="true"></i></a>
+									<a href="https://instagram.com/naturatherapy.ks" target="_blank" class="link link-primary"><i class="fa fa-instagram icons mr-2" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -121,13 +121,13 @@
 							<p class="d-inline-block mr-4">{{trans('foot.getsocial')}}</p>
 							<ul class="d-inline-block list-inline mb-0">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/naturatherapy.mk/" target="_blank" class="link link-primary"><i class="fa fa-facebook icons" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/naturatherapy.ks" target="_blank" class="link link-primary"><i class="fa fa-facebook icons" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.youtube.com/channel/UCUH7clLtbM5huq6hP1ZLkiA" target="_blank" class="link link-primary"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+									<a href="https://www.youtube.com/channel/UCSqpwiA5_ace07x3_NLlcqg" target="_blank" class="link link-primary"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/naturatherapy.mk/" target="_blank" class="link link-primary"><i class="fa fa-instagram icons mr-2" aria-hidden="true"></i></a>
+									<a href="https://instagram.com/naturatherapy.ks" target="_blank" class="link link-primary"><i class="fa fa-instagram icons mr-2" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
