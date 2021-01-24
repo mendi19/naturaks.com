@@ -134,9 +134,8 @@
 					</div>
 				</div>
 				<div class="col-sm-7 col-md-4 text-center text-md-left">
-					<h2 class="h5 font-weight-bold text-uppercase mb-4">{{trans('global.beinformed')}}</h2>
+					
 					<p class="mb-4">{!!trans('global.beinformed_text')!!}</p>
-					<a class="btn btn-secondary" href="{{route('shop.about')}}#sovet">{{trans('global.askforsover')}}</a>
 				</div>
 			</div>
 		</div>
