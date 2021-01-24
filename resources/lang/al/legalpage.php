@@ -1,5 +1,6 @@
 <?php
 return [
+'title'		=> 'Informacione ligjore',
 'content'  => '
 <div class="panel-group" id="accordion">
 
