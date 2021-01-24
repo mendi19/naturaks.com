@@ -235,7 +235,7 @@ var stardateC =new Date();
         autoclose: true,
         startDate: stardateC
     });
-$('.phoneformat').inputmask('+38\\9999999999', { 'placeholder': '+389xxxxxxxx ' });
+$('.phoneformat').inputmask('+38\\3999999999', { 'placeholder': '+383xxxxxxxx ' });
 @endif
 
  $(document).ready(function(){

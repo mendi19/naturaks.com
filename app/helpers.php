@@ -233,6 +233,8 @@ function addprefixbasedDomain($domain,$lastnumbers){
 		return "387".$lastnumbers;
 	}else if($domain == 11){
 		return "355".$lastnumbers;
+	}else if($domain == 12){
+		return "383".$lastnumbers;
 	}else{
 		return str_replace("+","",$lastnumbers);
 	}
