@@ -16,7 +16,7 @@
         <div class="col-md-9 mx-auto text-center pt-5 mt-5"><br><br>
             <img src="https://natura-kosovo.tk/assets/images/logo.svg" width="150px" class="mb-4"><br>
             <h3>Faqja është në përpunim teknik, ju lutemi na vizitoni më vonë! <br>
-            Për të parë produktet tona, vizitoni faqen tonë naturatherapy.al.</h3>
+            Për të parë produktet tona, vizitoni faqen tonë <a href="https://naturatherapy.al/">naturatherapy.al</a>.</h3>
       
     </div>
 </div>
