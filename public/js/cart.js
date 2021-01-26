@@ -119,7 +119,7 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
                 // load cart data from local storage
                 cart = JSON.parse(sessionStorage.cart);  
          
-                showCart(300);  // display cart that is loaded into cart array
+                showCart(0);  // display cart that is loaded into cart array
                 var currentpath = window.location.pathname;
             }else{
               $(".cart_checkout_btn").css("visibility", "hidden"); // hide table that shows cart
@@ -134,7 +134,7 @@ $(document).on('keyup','.cart-plus-minus-box',function(){
             var qty = parseInt(qty);  // get quantity
             //alert(qty);
 
-             var delivery = $('#opstina_select').find(':selected').data('price') || 300;
+             var delivery = $('#opstina_select').find(':selected').data('price') || 0;
             if(qty > 0){
               // update Qty if product is already present
               for (var i in cart) {
@@ -170,11 +170,11 @@ function saveCart() {
     function deleteItem(index){
       console.log("INDEX TO DELETE="+index);
             cart.splice(index,1); // delete item at index            
-            showCart(300);
+            showCart(0);
             
             saveCart();
 
-            showCart(300);
+            showCart(0);
             var currentpath = window.location.pathname;
 
         }
@@ -367,7 +367,7 @@ $(document).on('click','.clearcartbtn',function(){
     
   }
   cart =[];
-  showCart(300);
+  showCart(0);
 });
 
 
