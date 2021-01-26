@@ -5,7 +5,7 @@ return [
 
 Vendosni produktet e preferuara në shportën tuaj dhe përcjellni hapat nga sistemi për porosi.<br><br>
 
-Me përdorim të www.naturatherapy.al  fitoni mundësi të zgjidhni ku dhe kur poruduktet e blera të dorëzohen, mënyrën e pagesës e cila i përshtat më shumë mundësive tuaja.<br><br>
+Me përdorim të www.naturaks.com  fitoni mundësi të zgjidhni ku dhe kur poruduktet e blera të dorëzohen, mënyrën e pagesës e cila i përshtat më shumë mundësive tuaja.<br><br>
 
 Pas mbarimit të sukseshëm të porosisë suaj, do të fitoni konfirmim automatik në email adresën që keni regjistruar gjatë porosisë.<br>",
 
