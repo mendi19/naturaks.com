@@ -180,15 +180,17 @@ class OrdersController extends Controller
 	            }//end foreach
                 	
 	            $array_update_order = array();
-	            $deliveryprice = 300;
+	            $deliveryprice = 3;
 
               $getcity = Cities::find($request->opstina);
               if(isset($getcity)){
                 $deliveryprice = $getcity->price;
               }
-
-              $total_for_pay += $deliveryprice;
-
+              if($total_for_pay < 14.9){
+                $total_for_pay += $deliveryprice;
+              }else{
+                $deliveryprice = 0;
+              }
 	      
 	            $array_update_order['total_order']              = $total_for_pay;
                 $array_update_order['deliveryprice']          = $deliveryprice;

@@ -29,7 +29,7 @@ return [
 	'noprodincart' => 'Shporta juaj është e zbrazët',
 	'backtoproducts' => 'Kthehu te produktet',
 	'akciskaponuda'=>'Ofertë speciale',
-	'fororedersafteramountisfree' => '',
+	'fororedersafteramountisfree' => 'Për porosi mbi 14.90 euro, dorëzimi është falas.',
 	'asksovet'	=> 'KËRKONI KËSHILLA DHE MENDIME PRFESIONALE PËR SHËNDETIN',
 	'asksover_tekst'	=> 'Kërkoni këshilla mjekësore / shëndetësore',
 	'cart'				=> 'shporta',

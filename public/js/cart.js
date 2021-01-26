@@ -335,10 +335,13 @@ function showCart(deliveryprice) {
 
        
 
-           // if(totaltopay < 990){
-             // deliveryprice = 300;
+            if(totaltopay < 14.90){
+              deliveryprice = deliveryprice;
               totaltopay += deliveryprice;
-            //}
+            //  alert(deliveryprice);
+            }else{
+              deliveryprice = 0;
+            }
 
             $('#idscart').val(JSON.stringify(cart));
             totaltopay_withshipping = totaltopay;// + deliveryprice;
