@@ -54,8 +54,8 @@ function featured_image_v3($id,$featured_image,$type)
 	return $url;
 }
 
-function formatprice($price){return number_format($price,0, ',','.');}
-function formamtnumberwithoutround($amount){return number_format(floor($amount),0);}
+function formatprice($price){return number_format($price,2, ',','.');}
+function formamtnumberwithoutround($amount){return number_format(floor($amount),2);}
 function getfinalprice($price,$discountedprice,$validyesno,$expirydate_start,$expirydate_end,$expirydate_limitedyesno,$discount_kolicina,$discount_kolicina_nolimit,$currency)
 {
 
