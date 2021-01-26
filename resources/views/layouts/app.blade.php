@@ -57,17 +57,17 @@
 					<div class="d-none d-md-block">
 						<ul class="list-unstyled">
 							<li>
-								<span class="mr-3">E hane-E premte:</span>
-								<span class="">08:00am - 08:00pm</span>
+								<span class="mr-3">{{trans('foot.workingdays')}}</span>
+								<span class="">{{trans('foot.workinghours')}}</span>
 							</li>
 							<li>
-								<span class="mr-3">Сабота:</span>
-								<span class="">10:00am - 06:00pm</span>
+								<span class="mr-3">{{trans('foot.saturday')}}:</span>
+								<span class="">{{trans('foot.saturdayhours')}}</span>
 							</li>
 						</ul>
 						<hr class="my-4">
 						<div class="get-social">
-							<p class="d-inline-block mr-4">Get Social</p>
+							<p class="d-inline-block mr-4">{{trans('foot.getsocial')}}</p>
 							<ul class="d-inline-block list-inline mb-0">
 								<li class="list-inline-item">
 									<a href="https://www.facebook.com/naturatherapy.ks" target="_blank" class="link link-primary"><i class="fa fa-facebook icons" aria-hidden="true"></i></a>
