@@ -89,10 +89,10 @@
 							<div class="col-12">
 								@if(getfinalprice($data->minimal_price,$data->discounted_price,$data->discount_status,$data->discount_from_date,$data->discount_to_date,$data->discount_permanent_yesno,$data->discount_kolicina,$data->discount_kolicina_nolimit,trans('general.currency')) != $data->minimal_price)
 
-								<p class="h6 product-title-2 text-sm font-weight-bold mb-2"><span class="text-del">{{$data->minimal_price}} {{trans('general.currency')}}.</span></p>
+								<p class="h6 product-title-2 text-sm font-weight-bold mb-2">a<span class="text-del">{{$data->minimal_price}} {{trans('general.currency')}}.</span></p>
 							@endif
 
-																<p class="h2 text-red mb-3 mb-lg-5">{{displayfinalprice($data->minimal_price,$data->discounted_price,$data->discount_status,$data->discount_from_date,$data->discount_to_date,$data->discount_permanent_yesno,$data->discount_kolicina,$data->discount_kolicina_nolimit,trans('general.currency'))}}.</p>
+				<p class="h2 text-red mb-3 mb-lg-5">{{displayfinalprice($data->minimal_price,$data->discounted_price,$data->discount_status,$data->discount_from_date,$data->discount_to_date,$data->discount_permanent_yesno,$data->discount_kolicina,$data->discount_kolicina_nolimit,trans('general.currency'))}}.</p>
 							</div>
 							<div class="order-controls-wrapper form-group col-auto mb-0">
 								<input type="number" min="1" max="999" value="1" name="qty" class="form-control h-100 increment-control quantity_1_{{$data->id}}" id="quantity">

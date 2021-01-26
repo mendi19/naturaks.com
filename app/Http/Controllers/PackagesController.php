@@ -20,7 +20,10 @@ class PackagesController extends Controller
     }
 
     public function show($slug){
+      $domain_id = \Config::get('app.domain_id');
+
     	$data = Packages::where('slug','LIKE',$slug)
+      ->where('domain_id',$domain_id)
       ->with('getimages')
       ->where('status_webpage',1)
       ->first();
