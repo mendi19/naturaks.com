@@ -53,105 +53,6 @@
 			</div>
 		</div>
 	</section>
-	<section class="section bg-light py-5 py-xl-100 overflow-hidden">
-		<div class="container">
-			<h2 class="h1 text-center mb-4 mb-md-5">{{trans('about.ourteam')}}</h2>
-			<div class="row row-employees justify-content-center">
-				<div class="col-6 col-md-4 col-employees text-center mb-4">
-					<div class="img-wrapper mb-4 pb-lg-2">
-						<img src="{{asset('assets/images/team/sasko-drvosanski.jpg')}}?V=123123" class="img-fluid rounded-primary">
-
-						<div class="img-wrapper-flip">
-							<div class="img-wrapper-flip-2">
-								<p class="h5 mb-2">
-									<span>{!!trans('about.team_1')!!}</span>
-								</p>
-								{!!trans('about.team_1_p')!!}
-
-							</div>
-						</div>
-
-					</div>
-					<p class="h5 mb-2"><span class="heading-border">{!!trans('about.team_1')!!}</span></p>
-					<p>{{trans('about.team_1_h')}}</p>
-					
-				</div>
-
-				<div class="col-6 col-md-4 col-employees text-center mb-4">
-					<div class="img-wrapper mb-4 pb-lg-2">
-						<img src="{{asset('assets/images/team/marijana-filipov.jpg')}}" class="img-fluid rounded-primary">
-						<div class="img-wrapper-flip">
-							<div class="img-wrapper-flip-2">
-								<p class="h5 mb-2">
-									<span>{{trans('about.team_2')}}</span>
-								</p>
-								{!!trans('about.team_2_p')!!}
-							</div>
-						</div>
-					</div>
-					<p class="h5 mb-2"><span class="heading-border">{{trans('about.team_2')}}</span></p>
-					<p>{{trans('about.team_2_h')}}</p>
-					
-				</div>
-
-				<div class="col-6 col-md-4 col-employees text-center mb-4">
-					<div class="img-wrapper mb-4 pb-lg-2">
-						<img src="{{asset('assets/images/team/hristina-angeloska.jpg')}}" class="img-fluid rounded-primary">
-						<div class="img-wrapper-flip">
-							<div class="img-wrapper-flip-2">
-								<p class="h5 mb-2">
-									<span>{{trans('about.team_3')}}</span>
-								</p>
-									{!!trans('about.team_3_p')!!}
-
-
-							</div>
-						</div>
-					</div>
-					<p class="h5 mb-2"><span class="heading-border">{{trans('about.team_3')}}</span></p>
-					<p>{{trans('about.team_3_h')}}</p>
-					
-				</div>
-
-				<div class="col-6 col-md-4 col-employees text-center mb-4">
-					<div class="img-wrapper mb-4 pb-lg-2">
-						<img src="https://placehold.jp/500x500.png" class="img-fluid rounded-primary">
-						<div class="img-wrapper-flip">
-							<div class="img-wrapper-flip-2">
-								<p class="h5 mb-2">
-									<span>{{trans('about.team_4')}}</span>
-								</p>
-								{!!trans('about.team_4_p')!!}
-								
-
-							</div>
-						</div>
-					</div>
-					<p class="h5 mb-2"><span class="heading-border">{{trans('about.team_4')}}</span></p>
-					<p>{{trans('about.team_4_h')}}</p>
-				</div>
-
-				<div class="col-6 col-md-4 col-employees text-center mb-4">
-					<div class="img-wrapper mb-4 pb-lg-2">
-						<img src="https://placehold.jp/500x500.png" class="img-fluid rounded-primary">
-						<div class="img-wrapper-flip">
-							<div class="img-wrapper-flip-2">
-								<p class="h5 mb-2">
-									<span>{{trans('about.team_5')}}</span>
-								</p>
-								{!!trans('about.team_5_p')!!}
-								
-
-
-							</div>
-						</div>
-					</div>
-					<p class="h5 mb-2"><span class="heading-border">{{trans('about.team_5')}}</span></p>
-					<p>{{trans('about.team_5_h')}}</p>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	<section class="section elements py-5 py-xl-100">
@@ -323,7 +224,7 @@
 		</div>
 	</section>
 
-
+<!--
 	<section class="section bg-light py-5 py-xl-100 overflow-hidden">
 		<div class="container">
 			<h2 class="h1 text-center mb-4 mb-md-5">{{trans('about.strucnisorabotn')}}</h2>
@@ -353,11 +254,11 @@
 				
 			</div>
 		</div>
-	</section>
+	</section>-->
 
 
 
-
+<!--
 	<section id="sovet" class="section elements py-5 py-xl-100">
 		<div class="element-top">
 			<img src="{{asset('assets/images/flower-element-1-left.svg')}}" class="element-img element-img-lg">
@@ -418,7 +319,7 @@
 			</form>
 
 		</div>
-	</section>
+	</section>-->
 
 @endsection
 

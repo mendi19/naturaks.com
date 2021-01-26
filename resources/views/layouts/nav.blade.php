@@ -10,7 +10,7 @@
                     <a href="mailto:{{trans('foot.emailfoot')}}" class="link link-dark"><i class="fa fa-envelope-o text-green mr-2" aria-hidden="true"></i>{{trans('foot.emailfoot')}}</a>
                 </li>
                 <li class="list-inline-item ">
-                    <a href="tel:{{trans('foot.phonenumb')}}" class="link link-dark font-weight-medium"><i class="fa fa-phone text-green mr-2" aria-hidden="true"></i>{{trans('global.orderon')}}: {{trans('foot.phonenumb')}}</a>
+                    <a href="tel:+389 70 230 720" class="link link-dark font-weight-medium"><i class="fa fa-phone text-green mr-2" aria-hidden="true"></i>{{trans('global.orderon')}}: {{trans('foot.phonenumb')}}</a>
                 </li>
             </ul>
         </div>
@@ -37,9 +37,7 @@
                         <li class="nav-item text-uppercase">
                             <a class="nav-link" href="{{route('shop.nutrigenetika')}}">{{trans('nutrigenist.nutrigenist')}}</a>
                         </li>
-                        <li class="nav-item text-uppercase">
-                            <a class="nav-link" href="{{route('shop.blog')}}">{{trans('global.naucnodokazano')}}</a>
-                        </li>
+                   
                         <li class="nav-item text-uppercase">
                             <a class="nav-link" href="{{route('shop.careers')}}">{{trans('global.career')}}</a>
                         </li>
@@ -53,10 +51,10 @@
                             <hr class="my-3">
                         </li>
                         <li class="nav-item">
-                            <a href="mailto:contact@naturatherapy.mk" class="nav-link"><i class="fa fa-envelope-o text-green mr-2" aria-hidden="true"></i>contact@naturatherapy.mk</a>
+                            <a href="mailto:{{trans('foot.emailfoot')}}" class="nav-link"><i class="fa fa-envelope-o text-green mr-2" aria-hidden="true"></i>{{trans('foot.emailfoot')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a href="tel:+389 70 230 720" class="nav-link font-weight-medium"><i class="fa fa-phone text-green mr-2" aria-hidden="true"></i>Нарачајте на: +389 70 230 720</a>
+                            <a href="tel:+389 70 230 720" class="nav-link font-weight-medium"><i class="fa fa-phone text-green mr-2" aria-hidden="true"></i>{{trans('global.orderon')}}: {{trans('foot.phonenumb')}}<</a>
                         </li>
                     </ul>
                 </div>
