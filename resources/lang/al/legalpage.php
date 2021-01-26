@@ -86,7 +86,7 @@ Natura Therapy ka të drejtën për të ndryshuar Politikën e Privatësisë në
 
 <b>KONTAKT NË LIDHJE ME POLITIKËN PËR MBROJTJE TË TË DHËNAVE PERSONALE</b><br>
 Ju lutemi na kontaktoni nëse keni ndonjë pyetje në lidhje me Politikën tonë të Privatësisë.<br>
-Mund të na kontaktoni online në contact@naturatherapy.al ose mund të na dërgoni postë në adresën: Bulevardi i dëshmorve K-P H-2 N-1, Prishtinë.
+Mund të na kontaktoni online në contact@naturaks.com ose mund të na dërgoni postë në adresën: Bulevardi i dëshmorve K-P H-2 N-1, Prishtinë.
 	                    </p>
 	                </div>
 	            </div>
@@ -96,7 +96,7 @@ Mund të na kontaktoni online në contact@naturatherapy.al ose mund të na dërg
 <div class="panel panel-default">
 	<div class="panel-heading">
 	    <h4 class="panel-title">
-	                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne3"><span class="glyphicon glyphicon-menu-right"></span>ПРАВИЛА И УСЛОВИ ЗА КОРИСТЕЊЕ НА www.naturaks.com</a>
+	                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne3"><span class="glyphicon glyphicon-menu-right"></span>RREGULLAT DHE KUSHTET PER PERDORIMIN E www.naturaks.com</a>
 	                </h4>
 	            </div>
 	            <div id="collapseOne3" class="panel-collapse collapse">
@@ -112,7 +112,7 @@ Me përdorim të dyqanit online të www.naturaks.com ju merrni përsipër të re
 Kushtet për blerjen e produkteve përmes dyqanit online të NATURA THERAPY përcaktohen nga parametrat e mëposhtëm: porosi, pagesa, përgatitja, dorëzimi, ankesa.<br>
 Furnizuesi i produkteve është NATURA TERAPI DOOEL Shkup, i cili përmes dyqanit të tij në internet mundëson blerjen e një pjese të gamës së produkteve që janë në ofertën e saj. <br>
 Blerës është çdo person juridik ose fizik që do të porosis produkte në mënyrë elektronike nga faqja e tregtisë elektronike www.naturaks.com. <br>
-Të gjitha çmimet shprehen në valutën shqipëtare (LEKË) përfshirë TVSH-në.<br><br>
+Të gjitha çmimet shprehen në valutën (Euro) përfshirë TVSH-në.<br><br>
 
 <b>3. Porosia</b><br>
 Produktet porositen në mënyrë elektronike duke zgjedhur një produkt të caktuar dhe duke e shtuar atë në shportën e konsumatorit. Produktet konsiderohen të porositura në momentin kur blerësi zgjedh, porosit dhe bën pagesën.<br>
@@ -120,7 +120,7 @@ Natura Therapy Shpknjp Shkup merr përsipër të dorëzojë të gjitha produktet
 
 <b>4. Çmimet</b><br>
 Çmimet janë të vlefshme në ditën e porosisë dhe pagesës.<br>
-Çmimet e të gjitha produkteve në faqen e internetit www.naturaks.com shprehen në lekë duke përfshirë TVSH-në.<br> 
+Çmimet e të gjitha produkteve në faqen e internetit www.naturaks.com shprehen në euro duke përfshirë TVSH-në.<br> 
 Natura Therapy Shpknjp Shkup ka të drejtën për ndryshim të çmimeve, në pajtim me politikën e kompanisë, pa lajmërim të përdoruesve. Ndryshimi i çmimit nuk do të bëhet nëse porosia është e pranuar. <br><br>
 
 <b>5. Përgatitja e porosisë</b><br>
@@ -144,7 +144,7 @@ Kjo politikë bazohet në dorëzimin e produktit të porositur në mënyrë elek
 - Shpenzimet e transportit përfshihen në çmimin përfundimtar të produktit kur porosisni.<br><br>
 
 <b>9. Kthimi/ Reklamimi i produktit</b><br>
-Në rast të kthimit të produktit, blerësi është i detyruar të tregojë ankesë të justifikuar në tel: +35544803344 ose në email contact@naturatherapy.al.<br>
+Në rast të kthimit të produktit, blerësi është i detyruar të tregojë ankesë të justifikuar në tel: +383 45 956 000 ose në email contact@naturaks.com.<br>
 Blerësi ka të drejtë të reklamimit në këto raste:<br>
 - dorëzim të produkteve të cilat nuk janë të porositura.<br>
 - dorëzim të produkteve të cilave ju ka kaluar afati i përdorimit.<br>
@@ -165,16 +165,16 @@ Që të regjistroheni në faqen tonë të internetit duhet të mbushni formulari
 Blerësi mban përgjegjësi për saktësinë dhe plotësinë e të dhënave të futura gjatë porosisë.<br><br>
 
 <b>12. Pronë intelektuale</b><br>
-Përmbajtja e dyqanit online Natura Therapy është e mbrojtur dhe Natura Therapy Shpknjp Shkup ka të drejtën e vetme për përdorim të saj. Për çdo përdorim komercial të përmbajtjes së www.naturaks.com duhet të fitoni aprovim paraprak dhe të kontaktoni në e-mail: contact@naturatherapy.al.<br><br>
+Përmbajtja e dyqanit online Natura Therapy është e mbrojtur dhe Natura Therapy Shpknjp Shkup ka të drejtën e vetme për përdorim të saj. Për çdo përdorim komercial të përmbajtjes së www.naturaks.com duhet të fitoni aprovim paraprak dhe të kontaktoni në e-mail: contact@naturaks.com.<br><br>
 
 <b>13. Disponueshmëria</b><br>
 Edhe pse Natura Therapy përpiqet tëju ofrojë shërbimet më të mira, nuk mund tju garantojë që shërbimet e Natura Therapy do tju përshtaten nevojave tuaja.<br>
 NATURA THERAPY gjithashtu nuk mund të garantojë që shërbimet do të jenë pa gabime.<br>
-Nëse vjen deri në çfardo lloj gabimi ose keqkuptim Ju lutemi lajmërohuni në numrin e telefonit +35544803344 ose на contact@naturatherapy.al si të njejtën mund ta fshini në periudh më të shpejtë të mundshme.<br>
+Nëse vjen deri në çfardo lloj gabimi ose keqkuptim Ju lutemi lajmërohuni në numrin e telefonit +383 45 956 000 ose на contact@naturaks.com si të njejtën mund ta fshini në periudh më të shpejtë të mundshme.<br>
 Aksesi në NATURA THERAPY ndonjëherë mund të jetë i padisponueshëm për shkak të funksionimit dhe mirëmbajtjes së tij ose futjes së përmbajtjes së re.<br><br>
 
 NATURA THERAPY Shkup ka të drejtën për ndryshimin e këtyre kushteve dhe rregullave pa njoftim.
-Të gjitha ndryshimet vlejnë për përdorimin e web faqes naturatherapy.al. <br>
+Të gjitha ndryshimet vlejnë për përdorimin e web faqes naturaks.com. <br>
 Nëse nuk pajtoheni me rregullat e dhëna për përdorim ose nuk doni të pranoni, Ju lutemi të na kontaktoni me vërejtjet tuaja. <br>
 Gjatë kësaj kohe ju lutemi të mos përdorni shërbimet e tona nga interneti në web faqen www.naturaks.com. 
 </p>

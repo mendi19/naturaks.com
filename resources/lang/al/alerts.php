@@ -13,7 +13,7 @@ return [
 
 	
 	'success_made_order'		=> 'Të nderuar, me sukses keni porositur në sistemin е Natura Therapy!<br>
-Porosinë do tua dorëzojmë në datën e zgjedhur, nëse keni ndonjë pyetje na kontaktoni në numrin e telefonit +35544803344<br><br>Ekipi i Natura Therapy ju dëshiron Shëndet',
+Porosinë do tua dorëzojmë në datën e zgjedhur, nëse keni ndonjë pyetje na kontaktoni në numrin e telefonit +383 45 956 000<br><br>Ekipi i Natura Therapy ju dëshiron Shëndet',
 	'addedtocart' => 'je dodano u košaricu!',
 
 	'pobarajsover_success'		=> 'Të nderuar, me sukses keni porositur në sistemin е Natura Therapy!<br>
