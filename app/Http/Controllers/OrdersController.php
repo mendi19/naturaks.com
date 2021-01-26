@@ -35,7 +35,7 @@ class OrdersController extends Controller
     	//	'email' 	=> 'required|string|min:3|max:150',
     		'phone'		=> 'required|min:6|max:15'
     	]);
-    	$domain_id = 3;$client_id=0;
+    	$domain_id = 12;$client_id=0;
     	$operator_id = 26;$user_id = 0;
     	// echo "1<br>";
     	try{
