@@ -22,9 +22,14 @@ class ProductsController extends Controller
     }
 
     public function show($slug){
-    	$data = DomainProducts::where('domain_id',12)
-        ->where('slug','LIKE',$slug)
-        ->where('status_webpage',1)
+    	$q = DomainProducts::query();
+        $q->where('domain_id',12);
+        if(is_numeric($slug)){
+            $q->where('id',$slug);
+         }else{
+            $q->where('slug','LIKE',$slug);
+        }
+        $data =$q->where('status_webpage',1)
         ->with('getimages')->first();
         
         if(!is_null($data)){
