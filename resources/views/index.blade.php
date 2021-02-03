@@ -21,7 +21,7 @@
                                 <h1 class="h1 slider-title mb-3 mb-lg-4 text-uppercase">{{$vPack->name}}</h1>
                                 <p class="h4 slider-text text-red mb-3 mb-md-4 mb-lg-5">{{trans('global.foronly')}} {{displayfinalprice($vPack->minimal_price,$vPack->discounted_price,$vPack->discount_status,$vPack->discount_from_date,$vPack->discount_to_date,$vPack->discount_permanent_yesno,$vPack->discount_kolicina,$vPack->discount_kolicina_nolimit,trans('general.currency'))}}.</p>
                                 <div class="pt-lg-2">
-                                    <a href="{{route('shop.package.view',array('slug' => $vPack->slug))}}" class="btn btn-secondary btn-arrow">{{trans('global.ordernow')}}</a>
+                                    <a href="{{route('shop.package.view',array('slug' => urlslugcheck($vPack->slug,$vPack->id)))}}" class="btn btn-secondary btn-arrow">{{trans('global.ordernow')}}</a>
                                 </div>
                             </div>
                             <div class="col-slide-image col-sm-6 col-md-6 col-lg-6 order-1 order-sm-2">
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="btn-wrapper text-center mt-4 md-md-5 mt-lg-0">
-                <a href="{{route('shop.product.view',array('slug'=>$promo_prod->getproduct->slug))}}" class="btn btn-secondary btn-arrow">{{trans('global.findoutmore')}}</a>
+                <a href="{{route('shop.product.view',array('slug'=>urlslugcheck($promo_prod->getproduct->slug,$promo_prod->getproduct->id)))}}" class="btn btn-secondary btn-arrow">{{trans('global.findoutmore')}}</a>
             </div>
         </div>
     </section>
@@ -164,7 +164,7 @@
                 <div class="box-product bg-light product-animation h-100">
                         
             
-                        <a href="{{route('shop.package.view',array('slug' => $vPack->slug))}}" class="link link-dark">
+                        <a href="{{route('shop.package.view',array('slug' => urlslugcheck($vPack->slug,$vPack->id)))}}" class="link link-dark">
                             @if(getfinalprice($vPack->minimal_price,$vPack->discounted_price,$vPack->discount_status,$vPack->discount_from_date,$vPack->discount_to_date,$vPack->discount_permanent_yesno,$vPack->discount_kolicina,$vPack->discount_kolicina_nolimit,trans('general.currency')) != $vPack->minimal_price)
                         <div class="product-badge badge badge-promotion text-uppercase">{{trans('global.akciskaponuda')}}</div>
                     @endif
@@ -188,7 +188,7 @@
             </a>
 
             <div class="button-wrapper">
-                <a href="{{route('shop.package.view',array('slug' => $vPack->slug))}}" class="btn btn-secondary btn-icon"><i class="fa fa-shopping-cart mr-2"></i><span>{{trans('global.order')}}</span></a>
+                <a href="{{route('shop.package.view',array('slug' => urlslugcheck($vPack->slug,$vPack->id)))}}" class="btn btn-secondary btn-icon"><i class="fa fa-shopping-cart mr-2"></i><span>{{trans('global.order')}}</span></a>
             </div>
 
             
@@ -212,7 +212,7 @@
         <div class="product-col col-6 col-md-4 col-lg-3 mb-3 mb-lg-5">
                 <div class="box-product bg-white product-animation h-100">
             
-             <a href="{{route('shop.product.view',array('slug' => $v->slug))}}" class="link link-dark">
+             <a href="{{route('shop.product.view',array('slug' => urlslugcheck($v->slug,$v->id)))}}" class="link link-dark">
 
                 @if(getfinalprice($v->price,$v->discounted_price,$v->discount_status,$v->discount_from_date,$v->discount_to_date,$v->discount_permanent_yesno,$v->discount_kolicina,$v->discount_kolicina_nolimit,trans('general.currency')) != $v->price)
                         <div class="product-badge badge badge-promotion text-uppercase">{{trans('global.akciskaponuda')}}</div>
@@ -234,7 +234,7 @@
                 </div>              
             </a>
             <div class="button-wrapper">
-                <a href="{{route('shop.product.view',array('slug' => $v->slug))}}" class="btn btn-secondary btn-icon"><i class="fa fa-shopping-cart mr-2"></i><span>{{trans('global.order')}}</span></a>
+                <a href="{{route('shop.product.view',array('slug' => urlslugcheck($v->slug,$v->id)))}}" class="btn btn-secondary btn-icon"><i class="fa fa-shopping-cart mr-2"></i><span>{{trans('global.order')}}</span></a>
             </div>
             
         </div>

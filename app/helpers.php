@@ -240,4 +240,10 @@ function addprefixbasedDomain($domain,$lastnumbers){
 	}
 }
 
+function urlslugcheck($slug,$id){
+	if($slug!=''){
+		return $slug;
+	}
+	return $id;
+}
 ?>

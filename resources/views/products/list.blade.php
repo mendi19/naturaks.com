@@ -59,7 +59,7 @@
 					@if(getfinalprice($value->price,$value->discounted_price,$value->discount_status,$value->discount_from_date,$value->discount_to_date,$value->discount_permanent_yesno,$value->discount_kolicina,$value->discount_kolicina_nolimit,trans('general.currency')) != $value->price)
 						<div class="product-badge badge badge-promotion text-uppercase">{{trans('global.akciskaponuda')}}</div>
 					@endif
-			<a href="{{route('shop.product.view',array('slug' => $value->slug))}}" class="link link-dark">
+			<a href="{{route('shop.product.view',array('slug' => urlslugcheck($value->slug,$value->id)))}}" class="link link-dark">
 					<div class="animation-content mb-3">
 						<div class="img-wrapper product-img-wrapper justify-content-center">
 							<img src="{{asset('images/icons/spin.gif')}}" data-src="{{featured_image_v2($value->id,$value->featured_image,'xs')}}" class="img-fluid mb-4 lazy" alt="">
@@ -76,7 +76,7 @@
 					</div>				
 				</a>
 			<div class="button-wrapper">
-				<a href="{{route('shop.product.view',array('slug' => $value->slug))}}" class="btn btn-secondary btn-icon"><i class="fa fa-shopping-cart mr-2"></i><span>{{trans('global.order')}}</span></a>
+				<a href="{{route('shop.product.view',array('slug' => urlslugcheck($value->slug,$value->id)))}}" class="btn btn-secondary btn-icon"><i class="fa fa-shopping-cart mr-2"></i><span>{{trans('global.order')}}</span></a>
 			</div>
 			
 		</div>

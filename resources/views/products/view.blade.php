@@ -110,7 +110,7 @@
 							<div class="col-auto align-self-center pl-sm-0">
 								<a class="btn btn-secondary add_cart_0_{{$data->id}} add_to_cart"
 								   data-id="{{$data->id}}" 
-								   data-link="{{route('shop.product.view',array('slug' => $data->slug))}}"
+								   data-link="{{route('shop.product.view',array('slug' => urlslugcheck($data->slug,$data->id)))}}"
 								   data-type="0"
 								   data-price="{{getfinalprice($data->price,$data->discounted_price,$data->discount_status,$data->discount_from_date,$data->discount_to_date,$data->discount_permanent_yesno,$data->discount_kolicina,$data->discount_kolicina_nolimit,trans('general.currency'))}}"
 								   data-qty="1"
@@ -218,7 +218,7 @@ parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
 						<div class="product-badge badge badge-promotion text-uppercase">{{trans('global.akciskaponuda')}}</div>
 					@endif
 
-			<a href="{{route('shop.package.view',array('slug' => $vv->package->slug))}}"  class="link link-dark">
+			<a href="{{route('shop.package.view',array('slug' => urlslugcheck($vv->package->slug,$vv->package->id)))}}"  class="link link-dark">
 							<div class="animation-content mb-3">
 					<div class="img-wrapper product-img-wrapper justify-content-center">
 						
@@ -259,7 +259,7 @@ parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
 						<div class="product-badge badge badge-promotion text-uppercase">{{trans('global.akciskaponuda')}}</div>
 					@endif
 
-			<a href="{{route('shop.product.view',array('slug' => $vv->product->slug))}}" class="link link-dark">
+			<a href="{{route('shop.product.view',array('slug' => urlslugcheck($vv->product->slug,$vv->product->id)))}}" class="link link-dark">
 							<div class="animation-content mb-3">
 					<div class="img-wrapper product-img-wrapper justify-content-center">
 						
